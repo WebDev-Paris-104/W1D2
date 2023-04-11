@@ -1,0 +1,22 @@
+td,
+table {
+	border: 1px solid black;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-content: stretch;
+	align-items: center;
+}
+
+table td {
+	color: yellow;
+}
+
+table {
+	&:hover td {
+		color: red;
+	}
+}

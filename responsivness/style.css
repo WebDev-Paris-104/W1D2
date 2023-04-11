@@ -1,0 +1,28 @@
+/* .bad-button {
+	width: fit-content;
+	padding: 16px 24px;
+	border: 1px solid black;
+	border-radius: 8px;
+}
+.good-button {
+	border: 1px solid black;
+	width: fit-content;
+	padding: 1rem 1.5rem;
+	border-radius: 0.5rem;
+} */
+
+html {
+	min-height: 100vh;
+}
+
+body {
+	color: greenyellow;
+	background-color: orangered;
+}
+
+@media (prefers-color-scheme: dark) {
+	body {
+		background-color: darkblue;
+		color: gainsboro;
+	}
+}

@@ -1,0 +1,16 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+picture,
+img {
+	display: block;
+}
+
+.box {
+	width: 100px;
+	aspect-ratio: 1;
+	background-color: hsl(180, 80%, 70%);
+	padding: 20px;
+}

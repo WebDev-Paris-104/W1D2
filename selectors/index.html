@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<style>
+			[href="http://mdn.com"]
+			{
+				color: red;
+			}
+			[href^="https"] {
+				font-size: 2rem;
+			}
+			[href$="org"] {
+				font-size: 0.5rem;
+			}
+			[href*="you"] {
+				color: green;
+			}
+
+			.middle + li {
+				color: chartreuse;
+			}
+			.second-list:hover .middle {
+				color: yellow;
+			}
+		</style>
+	</head>
+	<body>
+		<h1 whatever="hello"></h1>
+
+		<ul>
+			<li><a href="https://youtube.com">Youtube</a></li>
+			<li><a href="http://mdn.fr">MDN</a></li>
+			<li><a href="http://some-website.org">Some website</a></li>
+		</ul>
+
+		<ul class="second-list">
+			<li>1</li>
+			<li>2</li>
+			<li class="middle">3</li>
+			<li>4</li>
+			<li>5</li>
+			<li>6</li>
+		</ul>
+	</body>
+</html>
