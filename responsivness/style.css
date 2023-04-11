@@ -11,11 +11,16 @@
 	border-radius: 0.5rem;
 } */
 
+* {
+	box-sizing: border-box;
+}
+
 html {
 	min-height: 100vh;
 }
 
 body {
+	margin: 0;
 	color: greenyellow;
 	background-color: orangered;
 }
@@ -24,5 +29,74 @@ body {
 	body {
 		background-color: darkblue;
 		color: gainsboro;
+	}
+}
+
+header ul {
+	display: none;
+}
+
+header nav {
+	height: 4rem;
+	background-color: white;
+	color: black;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	padding: 0 1rem;
+}
+
+/* @media screen and (max-width: 425px) */
+@media (width > 425px) {
+	#burger {
+		display: none;
+	}
+	#links {
+		display: flex;
+		list-style: none;
+		gap: 1rem;
+	}
+}
+main {
+	max-width: 80%;
+	margin: auto;
+}
+main > section {
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+}
+.card {
+	background-color: whitesmoke;
+	border: 1px solid black;
+	border-radius: 1rem;
+	color: black;
+	padding: 1rem;
+}
+
+.card header {
+	background-image: url("https://images.unsplash.com/photo-1573865526739-10659fec78a5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=715&q=80");
+	background-size: cover;
+	background-position: 50% 35%;
+	height: 5rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 1rem;
+}
+.card h2 {
+	color: white;
+}
+
+@media (width > 425px) {
+	main > section {
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-evenly;
+	}
+	.card {
+		max-width: 15rem;
+		background-color: black;
+		color: white;
 	}
 }
